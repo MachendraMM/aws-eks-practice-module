@@ -66,7 +66,7 @@ resource "aws_iam_role_policy_attachment" "AmazonEKS_CNI_Policy" {
   role       = aws_iam_role.eks-cluster-node-role.name
 }
 
-resource "aws_iam_instance_profile" "eks_ec2_instance_profile" {
-    name = "eks_ec2_instance_profile"
+resource "aws_iam_instance_profile" "eks_ec2_instance_profile1" {
+    name = "eks_ec2_instance_profile1"
     role = aws_iam_role.eks-cluster-node-role.name
 }
